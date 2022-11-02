@@ -110,7 +110,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 ```
 ### Reading Dataset
 ```py
-df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/Semester 3/Neural Networks/Exp_4/IRIS.csv")
+df = pd.read_csv("./IRIS.csv")
 df
 ```
 
@@ -120,7 +120,7 @@ df
 # X = df.iloc[:,:4]
 X = df[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']]
 
-# Takes first 5th columns and assign them to variable "Y". Object dtype refers to strings.
+# Takes first 5th columns and assign them to variable "Y".
 # y = df.select_dtypes(include=[object])  
 y = df['species']
 ```
